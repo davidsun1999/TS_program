@@ -22,8 +22,10 @@ public class Driver {
 		//  generate ConsoleLoader object
 		Loader	consoleLoader 	= new ConsoleLoader();
 			
+		double[] sides = consoleLoader.loadDoubleArray();
+		
 		//  generate triangle object use ConsoleLoader
-		Shape 	triangle	= new Triangle(consoleLoader.loadDoubleArray());
+		Shape 	triangle	= new Triangle(sides);
 			
 		//  get triangle type string
 		String 	type 	= triangle.getType();
